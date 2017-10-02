@@ -9,11 +9,26 @@
 import UIKit
 import Foundation
 
+struct UserDefualtKeys {
+    
+    static let userNameKey = "USER_NAME"
+    static let userphotoURL = "USER_PHOTO_URL"
+    static let userTokenKey = "USER_TOKEN_KEY"
+    static let userIDKey = "USER_ID_KEY"
+    static let userTypeKey = "USER_TYPE_KEY"
+    
+}
+
 class MainNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.isTranslucent = true
+        checkWhichScreenHasToOpen()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -24,7 +39,7 @@ class MainNavigationViewController: UINavigationController {
     
     func checkWhichScreenHasToOpen() {
         
-        let token = UserDefaults.standard.object(forKey: userTokenKey)
+        let token = UserDefaults.standard.object(forKey: UserDefualtKeys.userTokenKey)
         
         if (token as? NSString) != nil   {
             
@@ -34,7 +49,7 @@ class MainNavigationViewController: UINavigationController {
             
         }
         else{
-            let rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
+            let rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarViewController")
             
             self.viewControllers = [rootViewController!]
         }

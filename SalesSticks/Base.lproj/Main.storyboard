@@ -9,13 +9,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Main Navigation View Controller-->
         <scene sceneID="QPf-lN-9K2">
             <objects>
-                <navigationController id="Iah-3a-PKx" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r75-oR-qha">
+                <navigationController id="Iah-3a-PKx" customClass="MainNavigationViewController" customModule="SalesSticks" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="r75-oR-qha">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </navigationBar>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRM-3k-vAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -29,7 +30,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FU9-re-LMu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.098039215690000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36862745099999999" green="0.098039215690000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FU9-re-LMu" secondAttribute="bottom" id="76N-eu-pSq"/>
+                            <constraint firstItem="FU9-re-LMu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cms-PR-YW1"/>
+                            <constraint firstItem="FU9-re-LMu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rfh-LB-KXn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FU9-re-LMu" secondAttribute="trailing" id="zC4-fq-jPy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -40,7 +53,7 @@
         <!--Item 2-->
         <scene sceneID="fiY-u8-u6A">
             <objects>
-                <viewController storyboardIdentifier="MainTabBarViewController" id="K72-gL-08b" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tab2" id="K72-gL-08b" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jj7-J8-foO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,7 +69,7 @@
         <!--Item 1-->
         <scene sceneID="Tfg-lR-uyn">
             <objects>
-                <viewController storyboardIdentifier="MainTabBarViewController" id="bSl-9C-1ce" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tab1" id="bSl-9C-1ce" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bl2-bo-oJi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
