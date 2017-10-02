@@ -10,6 +10,9 @@
 		5A8BAFD23C74BDCEB65CF82D /* Pods_SalesSticks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E2780441C765C82C1BFCB /* Pods_SalesSticks.framework */; };
 		7F043F091F82B2FA00DC7D9B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F043F081F82B2FA00DC7D9B /* LoginViewController.swift */; };
 		7F043F0D1F82B53F00DC7D9B /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F043F0C1F82B53F00DC7D9B /* MainNavigationViewController.swift */; };
+		7F043F181F82BB3800DC7D9B /* UIColor+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F043F171F82BB3800DC7D9B /* UIColor+app.swift */; };
+		7F043F1A1F82BB7700DC7D9B /* UIView+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F043F191F82BB7600DC7D9B /* UIView+App.swift */; };
+		7F043F1C1F82BBB600DC7D9B /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F043F1B1F82BBB600DC7D9B /* UIFont+App.swift */; };
 		7FF823A11F81808000217F6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF823A01F81808000217F6D /* AppDelegate.swift */; };
 		7FF823A61F81808000217F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF823A41F81808000217F6D /* Main.storyboard */; };
 		7FF823A91F81808000217F6D /* SalesSticks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FF823A71F81808000217F6D /* SalesSticks.xcdatamodeld */; };
@@ -21,11 +24,11 @@
 		7DBC73F8B71415B7AAC186B3 /* Pods-SalesSticks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesSticks.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesSticks/Pods-SalesSticks.release.xcconfig"; sourceTree = "<group>"; };
 		7F043F081F82B2FA00DC7D9B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7F043F0C1F82B53F00DC7D9B /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
-		7F043F0E1F82B9E300DC7D9B /* UIFont+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
-		7F043F0F1F82B9E300DC7D9B /* UIView+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+App.swift"; sourceTree = "<group>"; };
-		7F043F101F82B9E300DC7D9B /* UIColor+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
-		7F043F111F82BA0200DC7D9B /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
-		7F043F121F82BA0200DC7D9B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7F043F171F82BB3800DC7D9B /* UIColor+app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+app.swift"; sourceTree = "<group>"; };
+		7F043F191F82BB7600DC7D9B /* UIView+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+App.swift"; sourceTree = "<group>"; };
+		7F043F1B1F82BBB600DC7D9B /* UIFont+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
+		7F043F211F82BC2E00DC7D9B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7F043F221F82BC2E00DC7D9B /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
 		7FF8239D1F81808000217F6D /* SalesSticks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesSticks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF823A01F81808000217F6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FF823A51F81808000217F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,8 +64,8 @@
 		7F043EFF1F82ADDF00DC7D9B /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				7F043F121F82BA0200DC7D9B /* Constants.swift */,
-				7F043F111F82BA0200DC7D9B /* StyleSheet.swift */,
+				7F043F211F82BC2E00DC7D9B /* Constants.swift */,
+				7F043F221F82BC2E00DC7D9B /* StyleSheet.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -70,9 +73,9 @@
 		7F043F021F82B21F00DC7D9B /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				7F043F101F82B9E300DC7D9B /* UIColor+App.swift */,
-				7F043F0E1F82B9E300DC7D9B /* UIFont+App.swift */,
-				7F043F0F1F82B9E300DC7D9B /* UIView+App.swift */,
+				7F043F1B1F82BBB600DC7D9B /* UIFont+App.swift */,
+				7F043F171F82BB3800DC7D9B /* UIColor+app.swift */,
+				7F043F191F82BB7600DC7D9B /* UIView+App.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -251,9 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F043F1A1F82BB7700DC7D9B /* UIView+App.swift in Sources */,
+				7F043F1C1F82BBB600DC7D9B /* UIFont+App.swift in Sources */,
 				7F043F091F82B2FA00DC7D9B /* LoginViewController.swift in Sources */,
 				7F043F0D1F82B53F00DC7D9B /* MainNavigationViewController.swift in Sources */,
 				7FF823A11F81808000217F6D /* AppDelegate.swift in Sources */,
+				7F043F181F82BB3800DC7D9B /* UIColor+app.swift in Sources */,
 				7FF823A91F81808000217F6D /* SalesSticks.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
