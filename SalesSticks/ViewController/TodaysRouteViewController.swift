@@ -1,23 +1,28 @@
 //
-//  LoginViewController.swift
+//  TodaysRouteViewController.swift
 //  SalesSticks
 //
-//  Created by Lohith K C on 10/2/17.
+//  Created by Saneeb salam on 10/5/17.
 //  Copyright © 2017 Lohith K C. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class TodaysRouteViewController: UIViewController {
 
-    @IBOutlet var bGView : UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//         StyleSheet.createGradientLayer(view : self.bgImageview )
-        //To check Comit
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        if self.navigationController != nil{
+            self.navigationController!.configureNamvigationControolerWithTitle()
+        }
+        self.title = "Sales Sticks"
+        
     }
 
     override func didReceiveMemoryWarning() {

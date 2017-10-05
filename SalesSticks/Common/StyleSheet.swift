@@ -1,6 +1,6 @@
 //
 //  StyleSheet.swift
-//  Arabian-Porter
+//  SalesSticks
 //
 //  Created by Lohith K C on 6/5/17.
 //  Copyright © 2017 Lohith K C. All rights reserved.
@@ -75,5 +75,16 @@ final class StyleSheet
 
 
         
+    }
+    
+    class func createGradientLayerForView(_ view: UIView , withColors colors: [CGColor]) {
+        
+        gradientLayer = CAGradientLayer()
+        
+        gradientLayer.frame = view.bounds
+        
+        gradientLayer.colors = colors
+        
+        view.layer.addSublayer(gradientLayer)
     }
 }

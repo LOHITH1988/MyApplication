@@ -18,6 +18,11 @@
 		7FF823A91F81808000217F6D /* SalesSticks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FF823A71F81808000217F6D /* SalesSticks.xcdatamodeld */; };
 		7FF823AB1F81808000217F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF823AA1F81808000217F6D /* Assets.xcassets */; };
 		7FF823AE1F81808000217F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF823AC1F81808000217F6D /* LaunchScreen.storyboard */; };
+		D9D80C4F1F8621630052BF8D /* UITabBar+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C4E1F8621630052BF8D /* UITabBar+app.swift */; };
+		D9D80C511F8638740052BF8D /* TodaysRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C501F8638740052BF8D /* TodaysRouteViewController.swift */; };
+		D9D80C531F8643B30052BF8D /* MyCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C521F8643B30052BF8D /* MyCustomerViewController.swift */; };
+		D9D80C551F8644400052BF8D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C541F8644400052BF8D /* SettingViewController.swift */; };
+		D9D80C571F864AE10052BF8D /* UINavigationViewController+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C561F864AE10052BF8D /* UINavigationViewController+app.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		7FF823AF1F81808000217F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB0E2780441C765C82C1BFCB /* Pods_SalesSticks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesSticks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42ED1D06BE329E9E7AF9AB8 /* Pods-SalesSticks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesSticks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesSticks/Pods-SalesSticks.debug.xcconfig"; sourceTree = "<group>"; };
+		D9D80C4E1F8621630052BF8D /* UITabBar+app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+app.swift"; sourceTree = "<group>"; };
+		D9D80C501F8638740052BF8D /* TodaysRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysRouteViewController.swift; sourceTree = "<group>"; };
+		D9D80C521F8643B30052BF8D /* MyCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomerViewController.swift; sourceTree = "<group>"; };
+		D9D80C541F8644400052BF8D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D9D80C561F864AE10052BF8D /* UINavigationViewController+app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+app.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,8 @@
 				7F043F1B1F82BBB600DC7D9B /* UIFont+App.swift */,
 				7F043F171F82BB3800DC7D9B /* UIColor+app.swift */,
 				7F043F191F82BB7600DC7D9B /* UIView+App.swift */,
+				D9D80C4E1F8621630052BF8D /* UITabBar+app.swift */,
+				D9D80C561F864AE10052BF8D /* UINavigationViewController+app.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -85,6 +97,9 @@
 			children = (
 				7F043F0C1F82B53F00DC7D9B /* MainNavigationViewController.swift */,
 				7F043F081F82B2FA00DC7D9B /* LoginViewController.swift */,
+				D9D80C501F8638740052BF8D /* TodaysRouteViewController.swift */,
+				D9D80C521F8643B30052BF8D /* MyCustomerViewController.swift */,
+				D9D80C541F8644400052BF8D /* SettingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -229,7 +244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		68E95BD684AA512832FD6543 /* [CP] Embed Pods Frameworks */ = {
@@ -254,10 +269,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D80C571F864AE10052BF8D /* UINavigationViewController+app.swift in Sources */,
+				D9D80C511F8638740052BF8D /* TodaysRouteViewController.swift in Sources */,
+				D9D80C551F8644400052BF8D /* SettingViewController.swift in Sources */,
 				7F043F1A1F82BB7700DC7D9B /* UIView+App.swift in Sources */,
 				7F043F1C1F82BBB600DC7D9B /* UIFont+App.swift in Sources */,
 				7F043F091F82B2FA00DC7D9B /* LoginViewController.swift in Sources */,
+				D9D80C4F1F8621630052BF8D /* UITabBar+app.swift in Sources */,
 				7F043F0D1F82B53F00DC7D9B /* MainNavigationViewController.swift in Sources */,
+				D9D80C531F8643B30052BF8D /* MyCustomerViewController.swift in Sources */,
 				7FF823A11F81808000217F6D /* AppDelegate.swift in Sources */,
 				7F043F181F82BB3800DC7D9B /* UIColor+app.swift in Sources */,
 				7FF823A91F81808000217F6D /* SalesSticks.xcdatamodeld in Sources */,

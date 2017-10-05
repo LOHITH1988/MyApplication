@@ -12,9 +12,9 @@
         <!--Main Navigation View Controller-->
         <scene sceneID="QPf-lN-9K2">
             <objects>
-                <navigationController id="Iah-3a-PKx" customClass="MainNavigationViewController" customModule="SalesSticks" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="Iah-3a-PKx" customClass="MainNavigationViewController" customModule="SalesSticks" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="r75-oR-qha">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </navigationBar>
@@ -50,37 +50,111 @@
             </objects>
             <point key="canvasLocation" x="329" y="-64"/>
         </scene>
-        <!--Item 2-->
+        <!--Today's Route-->
+        <scene sceneID="Vyv-6P-7ZZ">
+            <objects>
+                <navigationController id="dNX-Wb-XOR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Today's Route" image="todayRouteImage" id="bzu-b6-iIy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="E54-UO-jIb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bSl-9C-1ce" kind="relationship" relationship="rootViewController" id="kCr-Sq-6L8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVQ-74-feM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="1801"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="KYK-yO-xji">
+            <objects>
+                <viewController id="Fb1-GX-yNM" customClass="SettingViewController" customModule="SalesSticks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lk9-mj-ubv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4C-QJ-fbc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1552440226" green="0.43103438620000001" blue="0.70129811760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fep-P9-1Pt" firstAttribute="trailing" secondItem="J4C-QJ-fbc" secondAttribute="trailing" id="dQS-9B-lyn"/>
+                            <constraint firstItem="J4C-QJ-fbc" firstAttribute="top" secondItem="Fep-P9-1Pt" secondAttribute="top" id="ggS-Q2-KPp"/>
+                            <constraint firstItem="J4C-QJ-fbc" firstAttribute="leading" secondItem="Fep-P9-1Pt" secondAttribute="leading" id="ik3-JL-FlZ"/>
+                            <constraint firstItem="Fep-P9-1Pt" firstAttribute="bottom" secondItem="J4C-QJ-fbc" secondAttribute="bottom" id="t3G-2r-qJR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fep-P9-1Pt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settingImage" selectedImage="settingImage" id="1l5-v6-EhL"/>
+                    <navigationItem key="navigationItem" id="oca-OW-E5a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwb-Ce-xa5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1351" y="2590"/>
+        </scene>
+        <!--My Customers-->
         <scene sceneID="fiY-u8-u6A">
             <objects>
-                <viewController storyboardIdentifier="tab2" id="K72-gL-08b" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tab2" id="K72-gL-08b" customClass="MyCustomerViewController" customModule="SalesSticks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jj7-J8-foO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNI-H4-Vz0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1552440226" green="0.43103438620000001" blue="0.70129811760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KjL-mX-y87" firstAttribute="trailing" secondItem="SNI-H4-Vz0" secondAttribute="trailing" id="NER-i5-j0R"/>
+                            <constraint firstItem="SNI-H4-Vz0" firstAttribute="leading" secondItem="KjL-mX-y87" secondAttribute="leading" id="amc-tI-IUH"/>
+                            <constraint firstItem="KjL-mX-y87" firstAttribute="bottom" secondItem="SNI-H4-Vz0" secondAttribute="bottom" id="huT-i8-wx9"/>
+                            <constraint firstItem="SNI-H4-Vz0" firstAttribute="top" secondItem="KjL-mX-y87" secondAttribute="top" id="npj-qO-kxR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KjL-mX-y87"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="2wv-qW-ZpF"/>
+                    <tabBarItem key="tabBarItem" title="My Customers" image="customerImage" selectedImage="customerImage" id="2wv-qW-ZpF">
+                        <color key="badgeColor" red="0.1552440226" green="0.43103438620000001" blue="0.70129811760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="Td3-mW-iyB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YV0-Md-rQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="1374"/>
+            <point key="canvasLocation" x="1066" y="1040"/>
         </scene>
-        <!--Item 1-->
+        <!--Todays Route-->
         <scene sceneID="Tfg-lR-uyn">
             <objects>
-                <viewController storyboardIdentifier="tab1" id="bSl-9C-1ce" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tab1" id="bSl-9C-1ce" customClass="TodaysRouteViewController" customModule="SalesSticks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bl2-bo-oJi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeQ-LS-prj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1552440226" green="0.43103438620000001" blue="0.70129811760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WeQ-LS-prj" firstAttribute="leading" secondItem="BaR-TC-zMo" secondAttribute="leading" id="HVN-uD-vFj"/>
+                            <constraint firstItem="BaR-TC-zMo" firstAttribute="bottom" secondItem="WeQ-LS-prj" secondAttribute="bottom" id="YlZ-TZ-rE5"/>
+                            <constraint firstItem="BaR-TC-zMo" firstAttribute="trailing" secondItem="WeQ-LS-prj" secondAttribute="trailing" id="mYI-Oe-iMk"/>
+                            <constraint firstItem="WeQ-LS-prj" firstAttribute="top" secondItem="BaR-TC-zMo" secondAttribute="top" id="sMT-el-ytu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BaR-TC-zMo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="LxK-IZ-VJn"/>
+                    <tabBarItem key="tabBarItem" title="Todays Route" image="todayRouteImage" selectedImage="todayRouteImage" id="LxK-IZ-VJn"/>
+                    <navigationItem key="navigationItem" id="Loe-J0-1K1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47K-Oh-a1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="709"/>
+            <point key="canvasLocation" x="1065" y="1870"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qdp-ZA-xra">
@@ -90,15 +164,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.03927331417798996" green="0.38717770576477051" blue="0.69092422723770142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.13189545273780823" green="0.64694082736968994" blue="0.88556414842605591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="bSl-9C-1ce" kind="relationship" relationship="viewControllers" id="YGe-Ej-v3h"/>
-                        <segue destination="K72-gL-08b" kind="relationship" relationship="viewControllers" id="2q2-oQ-lpT"/>
+                        <segue destination="dNX-Wb-XOR" kind="relationship" relationship="viewControllers" id="hTb-yF-PR9"/>
+                        <segue destination="7K8-Fq-i1A" kind="relationship" relationship="viewControllers" id="Qsn-3J-PRF"/>
+                        <segue destination="fbn-Lv-zYb" kind="relationship" relationship="viewControllers" id="9yb-iX-gfb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8H-kY-aL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-562" y="1042"/>
         </scene>
+        <!--My Customers-->
+        <scene sceneID="4ej-qf-xox">
+            <objects>
+                <navigationController id="7K8-Fq-i1A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Customers" image="customerImage" id="VX6-P4-Ikr"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="bRg-EP-l7l">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="K72-gL-08b" kind="relationship" relationship="rootViewController" id="eIO-ep-Fg6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6n-ps-3cA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="1041"/>
+        </scene>
+        <!--Settings -->
+        <scene sceneID="5vv-a0-IQi">
+            <objects>
+                <navigationController id="fbn-Lv-zYb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings " image="settingImage" id="EqD-e4-6xE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="25i-kC-q65">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Fb1-GX-yNM" kind="relationship" relationship="rootViewController" id="Gd9-GA-trQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TF2-ao-V0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1350" y="1823"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="customerImage" width="30" height="30"/>
+        <image name="settingImage" width="30" height="30"/>
+        <image name="todayRouteImage" width="30" height="30"/>
+    </resources>
 </document>
