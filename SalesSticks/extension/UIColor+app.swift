@@ -1,8 +1,8 @@
 //
-//  UIColor+app.swift
+//  UIColor+App.swift
 //  SalesSticks
 //
-//  Created by Lohith K C on 10/2/17.
+//  Created by Saneeb salam on 10/7/17.
 //  Copyright © 2017 Lohith K C. All rights reserved.
 //
 
@@ -12,10 +12,16 @@ import UIKit
 
 extension UIColor
 {
-    class var app_blue: UIColor {
-        return UIColor(RGBHex:0x3C1D72)
+    class var app_blue_1: UIColor {
+        return UIColor(RGBHex:0x0564af)
     }
     
+    class var app_blue_2: UIColor {
+        return UIColor(RGBHex:0x007dc2)
+    }
+    class var app_blue_3: UIColor {
+        return UIColor(RGBHex:0x04a8e2)
+    }
     class var app_navigationBarColor: UIColor {
         return UIColor(RGBHex:0x283174)
     }
@@ -32,10 +38,14 @@ extension UIColor
         return UIColor(RGBHex: 0xf7fbfb)
     }
     
+    class var app_pink: UIColor {
+        return UIColor(RGBHex: 0xf626a5)
+    }
     
     
-    
-    
+    class var app_background: UIColor {
+        return UIColor(RGBHex: 0xf9fafa)
+    }
     
 }
 
@@ -79,5 +89,5 @@ extension UIColor
         }
     }
     
+    
 }
-

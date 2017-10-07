@@ -47,7 +47,7 @@ class MainNavigationViewController: UINavigationController {
             
         }
         else{
-            let rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarViewController")
+            let rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
             
             self.viewControllers = [rootViewController!]
         }

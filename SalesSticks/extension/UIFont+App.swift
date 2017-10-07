@@ -1,13 +1,12 @@
 //
 //  UIFont+App.swift
-//  Arabian-Porter
+//  SalesSticks
 //
-//  Created by Lohith K C on 6/5/17.
+//  Created by Saneeb salam on 10/7/17.
 //  Copyright © 2017 Lohith K C. All rights reserved.
 //
 
 import Foundation
-
 import UIKit
 
 extension UIFont {

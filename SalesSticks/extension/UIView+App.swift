@@ -2,12 +2,11 @@
 //  UIView+App.swift
 //  SalesSticks
 //
-//  Created by Lohith K C on 10/2/17.
+//  Created by Saneeb salam on 10/7/17.
 //  Copyright © 2017 Lohith K C. All rights reserved.
 //
 
 import Foundation
-
 import UIKit
 
 extension UIView {
@@ -29,4 +28,5 @@ extension UIView {
         return nil
     }
 }
+
 

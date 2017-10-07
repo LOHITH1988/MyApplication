@@ -2,10 +2,9 @@
 //  StyleSheet.swift
 //  SalesSticks
 //
-//  Created by Lohith K C on 6/5/17.
+//  Created by Saneeb salam on 10/7/17.
 //  Copyright © 2017 Lohith K C. All rights reserved.
 //
-
 
 import Foundation
 import UIKit
@@ -36,6 +35,10 @@ let StyleSheetDrilldownCellPaddingFactor = 20 / interfaceSize.width
 
 final class StyleSheet
 {
+    
+    
+    
+    
     class func applyPriceLabelStyle(label : UILabel , size: CGFloat ) {
         label.font = UIFont.boldAppFontOfSize1(size)
         label.textColor = UIColor.app_black
@@ -57,9 +60,9 @@ final class StyleSheet
         
     }
     class func applySelectedSizeButton (button :UIButton) {
-    
+        
         button.setTitleColor(UIColor.darkGray, for: .normal)
-
+        
         
     }
     class func applyStyleAddToCartButton(button :UIButton) {
@@ -68,18 +71,17 @@ final class StyleSheet
         button.backgroundColor = UIColor.app_black
         button.layer.cornerRadius = 4
         
-
+        
     }
     class func applyUnSelectedSizeButton (button :UIButton) {
         button.setTitleColor(UIColor.lightGray, for: .normal)
-
-
+        
+        
         
     }
-    
     class func createGradientLayerForView(_ view: UIView , withColors colors: [CGColor]) {
         
-        gradientLayer = CAGradientLayer()
+       let gradientLayer = CAGradientLayer()
         
         gradientLayer.frame = view.bounds
         
@@ -88,3 +90,4 @@ final class StyleSheet
         view.layer.addSublayer(gradientLayer)
     }
 }
+

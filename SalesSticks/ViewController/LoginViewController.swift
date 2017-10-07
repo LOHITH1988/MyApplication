@@ -10,12 +10,21 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet var bGView : UIView!
+    @IBOutlet weak var line1View: UIView!
+    @IBOutlet weak var line2View: UIView!
     
+    @IBOutlet weak var loginButton: UIButton!
+
+    @IBOutlet weak var usernameTextFeild: UITextField!
+    @IBOutlet weak var passwordTextFeild: UITextField!
+
+    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//         StyleSheet.createGradientLayer(view : self.bgImageview )
+         StyleSheet.createGradientLayerForView(self.view, withColors: [UIColor.app_blue_1.cgColor, UIColor.app_blue_2.cgColor,UIColor.app_blue_3.cgColor])
         //To check Comit
         // Do any additional setup after loading the view.
     }
@@ -25,6 +34,9 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     /*
     // MARK: - Navigation
