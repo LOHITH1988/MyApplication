@@ -18,6 +18,8 @@
 		D9855B971F88A4BF0088D0B9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855B961F88A4BF0088D0B9 /* Constant.swift */; };
 		D9855B991F88A4FD0088D0B9 /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855B981F88A4FD0088D0B9 /* StyleSheet.swift */; };
 		D9855BA11F88D3F30088D0B9 /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BA01F88D3F30088D0B9 /* UIFont+App.swift */; };
+		D9855BA31F88D4410088D0B9 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BA21F88D4410088D0B9 /* UIColor+App.swift */; };
+		D9855BA51F88D4730088D0B9 /* UIView+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BA41F88D4730088D0B9 /* UIView+App.swift */; };
 		D9D80C4F1F8621630052BF8D /* UITabBar+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C4E1F8621630052BF8D /* UITabBar+app.swift */; };
 		D9D80C511F8638740052BF8D /* TodaysRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C501F8638740052BF8D /* TodaysRouteViewController.swift */; };
 		D9D80C531F8643B30052BF8D /* MyCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C521F8643B30052BF8D /* MyCustomerViewController.swift */; };
@@ -41,6 +43,8 @@
 		D9855B961F88A4BF0088D0B9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D9855B981F88A4FD0088D0B9 /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
 		D9855BA01F88D3F30088D0B9 /* UIFont+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
+		D9855BA21F88D4410088D0B9 /* UIColor+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
+		D9855BA41F88D4730088D0B9 /* UIView+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+App.swift"; sourceTree = "<group>"; };
 		D9D80C4E1F8621630052BF8D /* UITabBar+app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+app.swift"; sourceTree = "<group>"; };
 		D9D80C501F8638740052BF8D /* TodaysRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysRouteViewController.swift; sourceTree = "<group>"; };
 		D9D80C521F8643B30052BF8D /* MyCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomerViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				D9D80C4E1F8621630052BF8D /* UITabBar+app.swift */,
 				D9D80C561F864AE10052BF8D /* UINavigationViewController+app.swift */,
 				D9855BA01F88D3F30088D0B9 /* UIFont+App.swift */,
+				D9855BA21F88D4410088D0B9 /* UIColor+App.swift */,
+				D9855BA41F88D4730088D0B9 /* UIView+App.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 				D9D80C571F864AE10052BF8D /* UINavigationViewController+app.swift in Sources */,
 				D9D80C511F8638740052BF8D /* TodaysRouteViewController.swift in Sources */,
 				D9D80C551F8644400052BF8D /* SettingViewController.swift in Sources */,
+				D9855BA31F88D4410088D0B9 /* UIColor+App.swift in Sources */,
+				D9855BA51F88D4730088D0B9 /* UIView+App.swift in Sources */,
 				7F043F091F82B2FA00DC7D9B /* LoginViewController.swift in Sources */,
 				D9855BA11F88D3F30088D0B9 /* UIFont+App.swift in Sources */,
 				D9D80C4F1F8621630052BF8D /* UITabBar+app.swift in Sources */,
