@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SkyFloatingLabelTextField
 
 let interfaceSize = CGSize(width: 414, height: 736)
 
@@ -65,19 +66,30 @@ final class StyleSheet
         
         
     }
-    class func applyStyleAddToCartButton(button :UIButton) {
+    class func applyStyleAddTologinButton(button :UIButton) {
         
         button.setTitleColor(UIColor.white, for: .normal)
-        button.backgroundColor = UIColor.app_black
-        button.layer.cornerRadius = 4
-        
-        
+        button.backgroundColor = UIColor.clear
+        button.layer.cornerRadius = 12
+        button.layer.borderColor = UIColor.app_blue_3.cgColor
+        button.layer.borderWidth = 1
+        button.setTitle("Log in", for: .normal)
     }
-    class func applyUnSelectedSizeButton (button :UIButton) {
-        button.setTitleColor(UIColor.lightGray, for: .normal)
+    
+    
+    class func customizeFloatingTextField (textFeild :SkyFloatingLabelTextField, keyBoardType : UIKeyboardType , placeHolderString : String){
         
         
-        
+        textFeild.font =  UIFont.regularAppFontOfSize(StyleSheetApplicationFontSize6)
+        textFeild.placeholderFont = UIFont.italicSystemFont(ofSize: StyleSheetApplicationFontSize6)
+        textFeild.errorColor = UIColor.red
+        textFeild.textColor = UIColor.white
+        textFeild.selectedLineColor = UIColor.white
+        textFeild.lineColor =  UIColor.white
+        textFeild.titleColor = UIColor.app_blue_2
+        textFeild.selectedTitleColor =  UIColor.app_blue_2
+        textFeild.placeholder = placeHolderString
+        textFeild.keyboardType = keyBoardType
     }
     class func createGradientLayerForView(_ view: UIView , withColors colors: [CGColor]) {
         
@@ -88,6 +100,7 @@ final class StyleSheet
         gradientLayer.colors = colors
         
         view.layer.addSublayer(gradientLayer)
+        view.layer.zPosition = 1
     }
 }
 

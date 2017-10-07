@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class LoginViewController: UIViewController {
 
@@ -15,20 +16,30 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
 
-    @IBOutlet weak var usernameTextFeild: UITextField!
-    @IBOutlet weak var passwordTextFeild: UITextField!
+    @IBOutlet weak var usernameTextFeild: SkyFloatingLabelTextField!
+    @IBOutlet weak var passwordTextFeild: SkyFloatingLabelTextField!
 
-    
+    @IBOutlet weak var mainView: UIView!
+
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-         StyleSheet.createGradientLayerForView(self.view, withColors: [UIColor.app_blue_1.cgColor, UIColor.app_blue_2.cgColor,UIColor.app_blue_3.cgColor])
+        configureLoginViewController()
         //To check Comit
         // Do any additional setup after loading the view.
     }
 
+    
+    func configureLoginViewController()  {
+        
+        StyleSheet.createGradientLayerForView(self.mainView, withColors: [UIColor.app_blue_1.cgColor, UIColor.app_blue_2.cgColor,UIColor.app_blue_3.cgColor])
+        StyleSheet.customizeFloatingTextField(textFeild: usernameTextFeild, keyBoardType: .default, placeHolderString: "User Name")
+        StyleSheet.customizeFloatingTextField(textFeild: passwordTextFeild, keyBoardType: .default, placeHolderString: "Password")
+        StyleSheet.applyStyleAddTologinButton(button :loginButton)
+//        self.view.s
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
