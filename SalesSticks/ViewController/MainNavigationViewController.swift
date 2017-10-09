@@ -9,15 +9,6 @@
 import UIKit
 import Foundation
 
-struct UserDefualtKeys {
-    
-    static let userNameKey = "USER_NAME"
-    static let userphotoURL = "USER_PHOTO_URL"
-    static let userTokenKey = "USER_TOKEN_KEY"
-    static let userIDKey = "USER_ID_KEY"
-    static let userTypeKey = "USER_TYPE_KEY"
-    
-}
 
 class MainNavigationViewController: UINavigationController {
 

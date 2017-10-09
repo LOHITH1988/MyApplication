@@ -20,6 +20,11 @@
 		D9855BA11F88D3F30088D0B9 /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BA01F88D3F30088D0B9 /* UIFont+App.swift */; };
 		D9855BA31F88D4410088D0B9 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BA21F88D4410088D0B9 /* UIColor+App.swift */; };
 		D9855BA51F88D4730088D0B9 /* UIView+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BA41F88D4730088D0B9 /* UIView+App.swift */; };
+		D9855BA71F89F7E80088D0B9 /* UIImage+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BA61F89F7E80088D0B9 /* UIImage+App.swift */; };
+		D9855BAA1F8A07F30088D0B9 /* APPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BA91F8A07F30088D0B9 /* APPClient.swift */; };
+		D9855BAD1F8A5E360088D0B9 /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BAC1F8A5E360088D0B9 /* RouteViewModel.swift */; };
+		D9855BB11F8B740A0088D0B9 /* RouteDisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BAF1F8B740A0088D0B9 /* RouteDisplayTableViewCell.swift */; };
+		D9855BB41F8BA7290088D0B9 /* CustomerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BB31F8BA7290088D0B9 /* CustomerListViewModel.swift */; };
 		D9D80C4F1F8621630052BF8D /* UITabBar+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C4E1F8621630052BF8D /* UITabBar+app.swift */; };
 		D9D80C511F8638740052BF8D /* TodaysRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C501F8638740052BF8D /* TodaysRouteViewController.swift */; };
 		D9D80C531F8643B30052BF8D /* MyCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D80C521F8643B30052BF8D /* MyCustomerViewController.swift */; };
@@ -45,6 +50,11 @@
 		D9855BA01F88D3F30088D0B9 /* UIFont+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
 		D9855BA21F88D4410088D0B9 /* UIColor+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
 		D9855BA41F88D4730088D0B9 /* UIView+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+App.swift"; sourceTree = "<group>"; };
+		D9855BA61F89F7E80088D0B9 /* UIImage+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+App.swift"; sourceTree = "<group>"; };
+		D9855BA91F8A07F30088D0B9 /* APPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPClient.swift; sourceTree = "<group>"; };
+		D9855BAC1F8A5E360088D0B9 /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
+		D9855BAF1F8B740A0088D0B9 /* RouteDisplayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDisplayTableViewCell.swift; sourceTree = "<group>"; };
+		D9855BB31F8BA7290088D0B9 /* CustomerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewModel.swift; sourceTree = "<group>"; };
 		D9D80C4E1F8621630052BF8D /* UITabBar+app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+app.swift"; sourceTree = "<group>"; };
 		D9D80C501F8638740052BF8D /* TodaysRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysRouteViewController.swift; sourceTree = "<group>"; };
 		D9D80C521F8643B30052BF8D /* MyCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomerViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +100,7 @@
 				D9855BA01F88D3F30088D0B9 /* UIFont+App.swift */,
 				D9855BA21F88D4410088D0B9 /* UIColor+App.swift */,
 				D9855BA41F88D4730088D0B9 /* UIView+App.swift */,
+				D9855BA61F89F7E80088D0B9 /* UIImage+App.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -127,6 +138,9 @@
 		7FF8239F1F81808000217F6D /* SalesSticks */ = {
 			isa = PBXGroup;
 			children = (
+				D9855BAE1F8B73CA0088D0B9 /* Custome Table View Cell */,
+				D9855BAB1F8A5DF70088D0B9 /* ViewModels */,
+				D9855BA81F8A05C80088D0B9 /* APIClient */,
 				7F043F071F82B27200DC7D9B /* ViewController */,
 				7F043F021F82B21F00DC7D9B /* extension */,
 				7F043EFF1F82ADDF00DC7D9B /* Common */,
@@ -146,6 +160,31 @@
 				CB0E2780441C765C82C1BFCB /* Pods_SalesSticks.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9855BA81F8A05C80088D0B9 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				D9855BA91F8A07F30088D0B9 /* APPClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		D9855BAB1F8A5DF70088D0B9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D9855BAC1F8A5E360088D0B9 /* RouteViewModel.swift */,
+				D9855BB31F8BA7290088D0B9 /* CustomerListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D9855BAE1F8B73CA0088D0B9 /* Custome Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D9855BAF1F8B740A0088D0B9 /* RouteDisplayTableViewCell.swift */,
+			);
+			path = "Custome Table View Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,11 +315,16 @@
 				D9D80C551F8644400052BF8D /* SettingViewController.swift in Sources */,
 				D9855BA31F88D4410088D0B9 /* UIColor+App.swift in Sources */,
 				D9855BA51F88D4730088D0B9 /* UIView+App.swift in Sources */,
+				D9855BA71F89F7E80088D0B9 /* UIImage+App.swift in Sources */,
+				D9855BB41F8BA7290088D0B9 /* CustomerListViewModel.swift in Sources */,
 				7F043F091F82B2FA00DC7D9B /* LoginViewController.swift in Sources */,
 				D9855BA11F88D3F30088D0B9 /* UIFont+App.swift in Sources */,
 				D9D80C4F1F8621630052BF8D /* UITabBar+app.swift in Sources */,
 				7F043F0D1F82B53F00DC7D9B /* MainNavigationViewController.swift in Sources */,
+				D9855BB11F8B740A0088D0B9 /* RouteDisplayTableViewCell.swift in Sources */,
+				D9855BAA1F8A07F30088D0B9 /* APPClient.swift in Sources */,
 				D9855B971F88A4BF0088D0B9 /* Constant.swift in Sources */,
+				D9855BAD1F8A5E360088D0B9 /* RouteViewModel.swift in Sources */,
 				D9D80C531F8643B30052BF8D /* MyCustomerViewController.swift in Sources */,
 				7FF823A11F81808000217F6D /* AppDelegate.swift in Sources */,
 				7FF823A91F81808000217F6D /* SalesSticks.xcdatamodeld in Sources */,

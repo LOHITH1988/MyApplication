@@ -12,7 +12,7 @@ import UIKit
 extension UIFont {
     
     class func boldAppFontOfSize(_ size: CGFloat) -> UIFont {
-        return UIFont(name: "ArialRoundedMTBold", size: size)!
+        return UIFont.boldSystemFont(ofSize: size)
     }
     
     class func regularAppFontOfSize(_ size: CGFloat) -> UIFont {
