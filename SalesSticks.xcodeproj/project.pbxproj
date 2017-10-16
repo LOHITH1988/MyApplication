@@ -15,6 +15,8 @@
 		7FF823A91F81808000217F6D /* SalesSticks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FF823A71F81808000217F6D /* SalesSticks.xcdatamodeld */; };
 		7FF823AB1F81808000217F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF823AA1F81808000217F6D /* Assets.xcassets */; };
 		7FF823AE1F81808000217F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF823AC1F81808000217F6D /* LaunchScreen.storyboard */; };
+		D94460C51F8CE79000A1D70E /* CoustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94460C41F8CE79000A1D70E /* CoustomerListViewController.swift */; };
+		D94460C71F8CEFB500A1D70E /* CustomersDisplayCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94460C61F8CEFB500A1D70E /* CustomersDisplayCellTableViewCell.swift */; };
 		D9855B971F88A4BF0088D0B9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855B961F88A4BF0088D0B9 /* Constant.swift */; };
 		D9855B991F88A4FD0088D0B9 /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855B981F88A4FD0088D0B9 /* StyleSheet.swift */; };
 		D9855BA11F88D3F30088D0B9 /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9855BA01F88D3F30088D0B9 /* UIFont+App.swift */; };
@@ -45,6 +47,8 @@
 		7FF823AF1F81808000217F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB0E2780441C765C82C1BFCB /* Pods_SalesSticks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesSticks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42ED1D06BE329E9E7AF9AB8 /* Pods-SalesSticks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesSticks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesSticks/Pods-SalesSticks.debug.xcconfig"; sourceTree = "<group>"; };
+		D94460C41F8CE79000A1D70E /* CoustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoustomerListViewController.swift; sourceTree = "<group>"; };
+		D94460C61F8CEFB500A1D70E /* CustomersDisplayCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersDisplayCellTableViewCell.swift; sourceTree = "<group>"; };
 		D9855B961F88A4BF0088D0B9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D9855B981F88A4FD0088D0B9 /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
 		D9855BA01F88D3F30088D0B9 /* UIFont+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				7F043F0C1F82B53F00DC7D9B /* MainNavigationViewController.swift */,
 				7F043F081F82B2FA00DC7D9B /* LoginViewController.swift */,
 				D9D80C501F8638740052BF8D /* TodaysRouteViewController.swift */,
+				D94460C41F8CE79000A1D70E /* CoustomerListViewController.swift */,
 				D9D80C521F8643B30052BF8D /* MyCustomerViewController.swift */,
 				D9D80C541F8644400052BF8D /* SettingViewController.swift */,
 			);
@@ -183,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				D9855BAF1F8B740A0088D0B9 /* RouteDisplayTableViewCell.swift */,
+				D94460C61F8CEFB500A1D70E /* CustomersDisplayCellTableViewCell.swift */,
 			);
 			path = "Custome Table View Cell";
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				D9855BA71F89F7E80088D0B9 /* UIImage+App.swift in Sources */,
 				D9855BB41F8BA7290088D0B9 /* CustomerListViewModel.swift in Sources */,
 				7F043F091F82B2FA00DC7D9B /* LoginViewController.swift in Sources */,
+				D94460C51F8CE79000A1D70E /* CoustomerListViewController.swift in Sources */,
 				D9855BA11F88D3F30088D0B9 /* UIFont+App.swift in Sources */,
 				D9D80C4F1F8621630052BF8D /* UITabBar+app.swift in Sources */,
 				7F043F0D1F82B53F00DC7D9B /* MainNavigationViewController.swift in Sources */,
@@ -328,6 +335,7 @@
 				D9D80C531F8643B30052BF8D /* MyCustomerViewController.swift in Sources */,
 				7FF823A11F81808000217F6D /* AppDelegate.swift in Sources */,
 				7FF823A91F81808000217F6D /* SalesSticks.xcdatamodeld in Sources */,
+				D94460C71F8CEFB500A1D70E /* CustomersDisplayCellTableViewCell.swift in Sources */,
 				D9855B991F88A4FD0088D0B9 /* StyleSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,6 +29,8 @@ struct UserDefualtKeys {
 struct deriveUrl {
     static let Login_URL = "api/Employee/login"
     static let FetchRoute_URL = "api/Route/GetSalePersonRouteByDate"
+    static let FetchCoustomers_From_Route_URL = "api/Customer/getcustomerbyrouteid"
+
 }
 
 func alertUser(_ title : String , detailsText : String , vc : UIViewController){
@@ -60,5 +62,6 @@ func getDate()->String{
     
     let myString = formatter.string(from: Date())
     
-    return myString
+//    return myString
+    return "2017-10-09"
 }

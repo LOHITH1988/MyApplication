@@ -46,4 +46,8 @@ class RouteViewModel: NSObject {
     func addressDisplayfor(indexPath : IndexPath) -> String {
         return routeModel?[indexPath.row].value(forKeyPath: "RouteArea") as? String ?? ""
     }
+    func getRouteId(indexPath : IndexPath) -> String {
+        
+        return routeModel?[indexPath.row].value(forKeyPath: "Id") as? String ?? ""
+    }
 }

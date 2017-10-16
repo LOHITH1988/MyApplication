@@ -96,3 +96,21 @@ extension TodaysRouteViewController : UITableViewDataSource{
         return cell!
     }
 }
+
+extension TodaysRouteViewController : UITableViewDelegate{
+   
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        
+         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let routeId = routeModel.getRouteId(indexPath: indexPath)
+        
+        let destViewController  = self.storyboard!.instantiateViewController(withIdentifier: "CoustomerListViewController") as? CoustomerListViewController
+        destViewController?.routeId = routeId
+        
+        navigationController?.pushViewController(destViewController!, animated: true)
+        
+
+        
+    }
+}

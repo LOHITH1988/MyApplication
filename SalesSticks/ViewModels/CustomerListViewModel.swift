@@ -14,14 +14,14 @@ class CustomerListViewModel: NSObject {
     var customerModelList : [NSDictionary]?
     
     
-    func getRouteModel(completion : @escaping () -> Void)  {
+    func getCustomerModelListForRoute(route: String, completion : @escaping () -> Void)  {
         
         guard  let token = UserDefaults.standard.object(forKey: UserDefualtKeys.userTokenKey) as? String else {
             return
         }
         
-        let dataToSend = ["Token":token, "Date": getDate()] as AnyObject
-        appClient.fetchDataFromServer(dataParaMeter: dataToSend, subUrl: deriveUrl.FetchRoute_URL, postType: postType, appiTypeCalled: typeOfApiCalled.routeApi) { (routeData) in
+        let dataToSend = ["Token":token, "RouteId":"2"] as AnyObject
+        appClient.fetchDataFromServer(dataParaMeter: dataToSend, subUrl: deriveUrl.FetchCoustomers_From_Route_URL, postType: postType, appiTypeCalled: typeOfApiCalled.customerApi) { (routeData) in
             
             DispatchQueue.main.async {
                 
@@ -35,16 +35,16 @@ class CustomerListViewModel: NSObject {
         }
     }
     
-    func noOfRoutesToDisplay() -> Int {
+    func noOfCustomersToDisplay() -> Int {
       
         return customerModelList?.count ?? 0
     }
     func routeNameToDisplayfor(indexPath : IndexPath) -> String {
         
-        return customerModelList?[indexPath.row].value(forKeyPath: "RouteName") as? String ?? ""
+        return customerModelList?[indexPath.row].value(forKeyPath: "CustomerName") as? String ?? ""
     }
     func addressDisplayfor(indexPath : IndexPath) -> String {
-        return customerModelList?[indexPath.row].value(forKeyPath: "RouteArea") as? String ?? ""
+        return customerModelList?[indexPath.row].value(forKeyPath: "Address") as? String ?? ""
     }
     
 }
